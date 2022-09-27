@@ -129,7 +129,7 @@ table {
 }
 
 * {
-  /* outline: 1px solid yellow; */
+  outline: 1px solid yellow;
   text-decoration: none;
   /* ????????????????????????? */
   /* font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif ; */
@@ -395,4 +395,138 @@ table {
 }
 .footerEnd {
   text-align: end;
+}
+
+.container {
+  display: flex;
+  grid-gap: 20px;
+  padding: 30px 20px;
+}
+.containerTop {
+  display: flex;
+  flex-direction: column;
+}
+.shopAside {
+  width: 20%;
+}
+.shopAside h3 {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.shopAside li {
+  font-size: 16px;
+  padding: 5px;
+  border-bottom: 1px solid #3d1101;
+  color: #000;
+}
+.shopAside li:hover {
+  cursor: pointer;
+  background-color: #3d1101;
+}
+.shopAside a {
+  display: block;
+  color: #3d1101;
+}
+.shopAside a:hover {
+  color: #fff;
+}
+
+.containerRight {
+  width: 80%;
+}
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.searchBar .fas {
+  color: #fff;
+  background-color: #3d1101;
+  padding: 5px;
+  margin-left: -100px;
+  font-size: 13px;
+}
+.searchBar input {
+  width: 60%;
+}
+.searchBar .material-symbols-outlined {
+  font-size: 27px;
+  color: #000;
+  position: relative;
+}
+.carNum {
+  position: absolute;
+  font-size: 8px;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  height: 8px;
+  width: 8px;
+  padding: 3px;
+  right: -3px;
+}
+.searchCheck,
+.searchCheck a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.shopItem {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 10px;
+}
+.shopItem div {
+  width: 32%;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 5px #efe9e7;
+}
+.shopItem img {
+  padding-bottom: 20px;
+  height: 120px;
+  position: relative;
+}
+#shopFavorite {
+  position: absolute;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.shopItem h4,
+.shopItem p {
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
+.shopItem p {
+  font-size: 12px;
+  position: relative;
+}
+.shopItem p::after {
+  content: "";
+  position: absolute;
+  top: 130%;
+  left: 35%;
+  background: #000;
+  width: 30%;
+  height: 1px;
+}
+.shopDollar {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.shopItem button,
+.shopItem button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orangered;
+  cursor: pointer;
 }
