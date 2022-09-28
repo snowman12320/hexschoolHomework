@@ -542,3 +542,85 @@ table {
   color: orangered;
   cursor: pointer;
 }
+
+.registerTop {
+  background-color: #efe9e7;
+  padding-top: 40px;
+}
+.registerLogo {
+  background-image: url(./assets/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #efe9e7;
+  width: 245px;
+  height: 49px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+}
+.registerTitle {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+.registerWrap {
+  padding: 15px;
+  background-color: #efe9e7;
+}
+.registerWrapCenter h4 {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.registerWrapCenter {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  border-top: #ff5e45 solid 4px;
+  box-shadow: 1px 1px 3px gray;
+  padding: 15px;
+}
+.registerContainer {
+  display: flex;
+  grid-gap: 20px;
+}
+.registerRule {
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.registerInfor {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 14px;
+  grid-gap: 10px;
+  position: relative;
+}
+#registerMail {
+  position: absolute;
+  top: 28px;
+  font-size: 15px;
+  color: gray;
+}
+#registerPassword1 {
+  position: absolute;
+  font-size: 15px;
+  top: 83px;
+  color: gray;
+}
+#registerPassword2 {
+  position: absolute;
+  font-size: 15px;
+  top: 115px;
+  color: gray;
+}
+.registerInfor p {
+  color: gray;
+}
