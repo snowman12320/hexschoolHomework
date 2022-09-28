@@ -32,6 +32,12 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0"
     />
     <link rel="stylesheet" href="all.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </head>
   <body class="wrap">
     <section class="navbar">
@@ -45,7 +51,21 @@
           <a href="shopCar.html">購物車 <span>6</span> </a>
         </li>
       </ul>
+      <!-- 漢堡選單 -->
+      <span id="menuOpen" class="material-symbols-outlined"> menu_open </span>
     </section>
+    <ul class="menuAside">
+      <li><a href="#triBoxTitle">特色</a></li>
+      <li><a href="#chef">主廚</a></li>
+      <li><a href="#mapTitle">地圖</a></li>
+      <li><a href="#">會員</a></li>
+      <li>
+        <a href="shopCar.html"
+          >購物車
+          <!-- <span>6</span>  -->
+        </a>
+      </li>
+    </ul>
     <section class="banner">
       <div class="bannerBox"></div>
       <h2>咬一口就無法忘懷的漢堡</h2>
@@ -77,15 +97,30 @@
           <form class="registerInfor">
             <label for="email">Email Adddress* </label>
             <span id="registerMail" class="material-symbols-outlined"
-              >mail</span>
-            <input type="email" id="email" placeholder="" />
+              >mail</span
+            >
+            <input type="email" id="email" placeholder="" name="email" />
             <label for="password">Password* </label>
-            <span  id="registerPassword1"class="material-symbols-outlined"> lock </span>
-            <input type="password" id="password" placeholder="" />
-            <span id="registerPassword2" class="material-symbols-outlined"> lock </span>
-            <input type="password" id="password" placeholder="" />
+            <span id="registerPassword1" class="material-symbols-outlined">
+              lock
+            </span>
+            <input
+              type="password"
+              id="password"
+              placeholder=""
+              name="password"
+            />
+            <span id="registerPassword2" class="material-symbols-outlined">
+              lock
+            </span>
+            <input
+              type="password"
+              id="password"
+              placeholder=""
+              name="password"
+            />
             <a href="login.html"><p>已經有帳號了?</p></a>
-            <div class="mapButton">
+            <div class="registerButton">
               <input class="buttonSend" type="submit" value="註冊" />
             </div>
           </form>
