@@ -514,6 +514,7 @@ table {
   .mapInfor {
     width: 100%;
     font-size: 20px;
+    padding-bottom: 20px;
   }
   .mapInfor input {
     height: 30px;
@@ -666,6 +667,9 @@ table {
   }
   .shopAside {
     width: 100%;
+  }
+  .shopAside a{
+    padding: 10px;
   }
   .containerRight {
     width: 100%;
