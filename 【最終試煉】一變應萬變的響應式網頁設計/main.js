@@ -3,6 +3,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("body").toggleClass("open");
   });
+
   $(".chefOpen").click(function (e) {
     e.preventDefault();
     $("body").toggleClass("open2");
@@ -10,4 +11,9 @@ $(document).ready(function () {
   $(".chefOpen").click(function () {
     $("p").remove(".chefOpen");
   });
+
+    $("#shopFavorite").click(function (e) {
+      e.preventDefault();
+      $("body").toggleClass("clickFavor");
+    });
 });

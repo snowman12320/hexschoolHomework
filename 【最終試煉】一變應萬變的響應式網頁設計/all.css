@@ -136,7 +136,7 @@ table {
 * {
   /* outline: 1px solid yellow; */
   text-decoration: none;
-  /* ????????????????????????? */
+  /* 要局部給予設定 不然會沒有icon */
   /* font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif ; */
 }
 .wrap {
@@ -194,10 +194,10 @@ table {
   color: #fff;
   text-align: center;
   position: absolute;
-  top: 82px;
+  top: 80px;
   /* 左右進出擇一 */
-  /* transform: translateX(-1500px); */
-  transform: translateX(1500px);
+  transform: translateX(-1500px);
+  /* transform: translateX(1500px); */
   transition: all 1.2s;
   z-index: 20;
   overflow: hidden;
@@ -418,6 +418,9 @@ table {
   padding: 30px 30px;
   background-color: #efe9e7;
 }
+.commentRwd{
+  display: flex;
+}
 .comment img {
   height: 67px;
   border-radius: 50%;
@@ -443,11 +446,14 @@ table {
     align-items: center;
   }
   .comment img {
-    width: 30%;
-    height: auto;
+    /* width: 30%; */
+    height: 20%;
   }
   .commentFrom {
     padding-bottom: 20px;
+  }
+  .commentRwd{
+    display: flex;
   }
 }
 
@@ -691,6 +697,7 @@ table {
 }
 .shopItem div {
   width: 32%;
+  height: auto;
   margin-bottom: 5px;
   padding-bottom: 5px;
   display: flex;
@@ -709,10 +716,14 @@ table {
   cursor: pointer;
 }
 #shopFavoriteRed {
-  color: red;
   position: absolute;
+  color: red;
   padding: 5px;
   cursor: pointer;
+  display: none;
+}
+.clickFavor #shopFavoriteRed {
+  display: block;
 }
 #hotSell {
   position: absolute;
@@ -761,9 +772,11 @@ table {
   .shopItem {
     flex-direction: column;
     align-items: center;
+    
   }
   .shopItem div {
-    width: 50%;
+    width: 80%;
+    height: auto;
     position: relative;
   }
   #hotSell {
@@ -815,6 +828,7 @@ table {
   border-top: #ff5e45 solid 4px;
   box-shadow: 1px 1px 3px gray;
   padding: 15px;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
 }
 .registerContainer {
   display: flex;
@@ -832,6 +846,10 @@ table {
   font-size: 14px;
   grid-gap: 10px;
   position: relative;
+}
+.registerInfor input {
+  padding-left: 20px;
+  border: #ccc 2px solid;
 }
 #registerMail {
   position: absolute;
@@ -876,7 +894,7 @@ table {
   }
   .registerInfor input {
     height: 30px;
-    width: 100%;
+    width: 95%;
     font-size: 25px;
   }
   #registerMail {
@@ -904,4 +922,70 @@ table {
   .registerButton input {
     padding-bottom: 40px;
   }
+}
+
+.loginWrap {
+  padding: 15px;
+  background-color: #efe9e7;
+}
+.loginWrapCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  border-top: #ff5e45 solid 4px;
+  box-shadow: 1px 1px 3px gray;
+  padding: 15px;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+.loginWrapCenter h4 {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+.loginContainer {
+  display: flex;
+  width: 100%;
+}
+.loginInfor {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  grid-gap: 10px;
+  position: relative;
+  width: 100%;
+}
+.loginInfor input {
+  border: 1px #ccc solid;
+  border-radius: 1%;
+  height: 30px;
+  padding-left: 20px;
+}
+#loginMail {
+  position: absolute;
+  top: 32px;
+  font-size: 20px;
+  color: gray;
+}
+#loginPassword1 {
+  position: absolute;
+  font-size: 20px;
+  top: 100px;
+  color: gray;
+  margin-right: 10px;
+}
+.loginInfor p {
+  color: gray;
+}
+.buttonCancel,
+.buttonSend {
+  padding: 0;
+  width: 49%;
+}
+@media (max-width: 768px) {
+.loginWrapCenter{
+  width: 90%;
+}
 }

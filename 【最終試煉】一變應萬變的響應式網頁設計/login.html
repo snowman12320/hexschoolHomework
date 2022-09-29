@@ -40,12 +40,9 @@
   </head>
   <body class="wrap">
     <section class="navbar">
-      <a class="headerLogo" href="#">六角西餐廳</a>
+      <a class="headerLogo" href="index.html">六角西餐廳</a>
       <ul class="menu">
-        <li><a href="#triBoxTitle">特色</a></li>
-        <li><a href="#chef">主廚</a></li>
-        <li><a href="#mapTitle">地圖</a></li>
-        <li><a href="#">會員</a></li>
+        <li><a href="index.html">首頁</a></li>
         <li>
           <a href="shopCar.html">購物車 <span>6</span> </a>
         </li>
@@ -54,9 +51,6 @@
       <span id="menuOpen" class="material-symbols-outlined"> menu_open </span>
     </section>
     <ul class="menuAside">
-      <!-- <li><a href="#triBoxTitle">特色</a></li>
-      <li><a href="#chef">主廚</a></li>
-      <li><a href="#mapTitle">地圖</a></li> -->
       <li><a href="index.html">首頁</a></li>
       <li>
         <a href="shopCar.html"
@@ -81,27 +75,18 @@
       <a class="registerLogo" href="#">六角西餐廳</a>
       <h3 class="registerTitle">享受美食好味道</h3>
     </div>
-    <section class="registerWrap">
-      <div class="registerWrapCenter">
-        <h4>REGISTER</h4>
-        <div class="registerContainer">
-          <div class="registerRule">
-            <p>
-              就是這樣條款：<br />
-              Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros
-              eget libero posuere vulputate. Etiam elit elit, elementum sed
-              varius at, adipiscing vitae est. Sed nec felis pellentesque,
-              lacinia dui sed, ultricies sapien...
-            </p>
-          </div>
-          <form class="registerInfor">
+    <section class="loginWrap">
+      <div class="loginWrapCenter">
+        <h4>LOGIN</h4>
+        <div class="loginContainer">
+          <form class="loginInfor">
             <label for="email">Email Adddress* </label>
-            <span id="registerMail" class="material-symbols-outlined"
+            <span id="loginMail" class="material-symbols-outlined"
               >mail</span
             >
             <input type="email" id="email" placeholder="" name="email" />
             <label for="password">Password* </label>
-            <span id="registerPassword1" class="material-symbols-outlined">
+            <span id="loginPassword1" class="material-symbols-outlined">
               lock
             </span>
             <input
@@ -110,17 +95,9 @@
               placeholder=""
               name="password"
             />
-            <span id="registerPassword2" class="material-symbols-outlined">
-              lock
-            </span>
-            <input
-              type="password"
-              id="password"
-              placeholder=""
-              name="password"
-            />
-            <a href="login.html"><p>已經有帳號了?</p></a>
-            <div class="registerButton">
+            <a href="login.html"><p>忘記密碼?</p></a>
+            <div class="loginButton">
+              <input class="buttonCancel" type="submit" value="取消" />
               <input class="buttonSend" type="submit" value="註冊" />
             </div>
           </form>
