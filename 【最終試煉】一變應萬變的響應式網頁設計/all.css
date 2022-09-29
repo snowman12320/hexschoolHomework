@@ -144,6 +144,9 @@ table {
   margin: 0 auto;
   position: relative;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .navbar {
   display: flex;
@@ -520,6 +523,9 @@ table {
   .mapInfor input {
     height: 30px;
   }
+  .mapButton {
+    width: 100%;
+  }
   .buttonCancel,
   .buttonSend {
     width: 50%;
@@ -713,6 +719,7 @@ table {
   height: 120px;
   position: relative;
 }
+/* icon只能用id */
 #shopFavorite {
   position: absolute;
   color: #fff;
@@ -768,9 +775,17 @@ table {
 }
 .shopItem button {
   border: orangered 1px solid;
-  border-radius: 5px;
+  border-radius: 2px;
   margin: 10px;
   background-color: #fff;
+}
+.shopItem button:hover {
+  background-color: yellowgreen;
+  color: #fff;
+  border-color: yellowgreen;
+}
+.shopItem button span:hover {
+  color: #fff;
 }
 @media (max-width: 768px) {
   .shopItem {
@@ -929,7 +944,7 @@ table {
     align-self: center;
     width: 100%;
   }
-  .registerButtonSend{
+  .registerButtonSend {
     padding-bottom: 40px;
     width: 100%;
   }
@@ -990,7 +1005,7 @@ table {
 .loginInfor p {
   color: gray;
 }
-.loginButton{
+.loginButton {
   align-self: end;
 }
 .loginButtonCancel {
@@ -1013,7 +1028,7 @@ table {
   .loginWrapCenter {
     width: 90%;
   }
-  .loginButton{
+  .loginButton {
     display: flex;
     width: 100%;
     grid-gap: 10px;
