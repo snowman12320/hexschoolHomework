@@ -134,7 +134,7 @@ table {
   box-sizing: border-box;
 } */
 * {
-  outline: 1px solid yellow;
+/*   outline: 1px solid yellow; */
   text-decoration: none;
   /* 要局部給予設定 不然會沒有icon */
   /* font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif ; */
