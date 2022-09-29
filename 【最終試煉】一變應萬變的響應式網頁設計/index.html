@@ -32,12 +32,6 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,1,0"
     />
     <link rel="stylesheet" href="all.css" />
-        <script
-      src="https://code.jquery.com/jquery-3.6.1.js"
-      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-      crossorigin="anonymous"
-    ></script>
-    <script src="main.js"></script>
   </head>
   <body class="wrap">
     <section class="navbar">
@@ -51,8 +45,8 @@
           <a href="shopCar.html">購物車 <span>6</span> </a>
         </li>
       </ul>
-    <!-- 漢堡選單 -->
-    <span id="menuOpen" class="material-symbols-outlined"> menu_open </span>
+      <!-- 漢堡選單 -->
+      <span id="menuOpen" class="material-symbols-outlined"> menu_open </span>
     </section>
     <ul class="menuAside">
       <li><a href="#triBoxTitle">特色</a></li>
@@ -138,32 +132,32 @@
             自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
           </p>
           <p class="commentFrom">-- 產品經理</p>
+        </div>
       </div>
+      <div class="commentRwd">
+        <img src="./assets/avatar_2.png" alt="" />
+        <div class="commentItem">
+          <h4>廟口小霸王</h4>
+          <p>
+            自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+          </p>
+          <p class="commentFrom">-- 金身道士</p>
+        </div>
       </div>
-            <div class="commentRwd">
-
-      <img src="./assets/avatar_2.png" alt="" />
-      <div class="commentItem">
-        <h4>廟口小霸王</h4>
-        <p>
-          自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-        </p>
-        <p class="commentFrom">-- 金身道士</p>
-      </div>
-      </div>
-            <div class="commentRwd">
-
-      <img src="./assets/avatar_3.png" alt="" />
-      <div class="commentItem">
-        <h4>春天也來了</h4>
-        <p>
-          自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
-        </p>
-        <p class="commentFrom">-- 美麗萬分</p>
-      </div>
+      <div class="commentRwd">
+        <img src="./assets/avatar_3.png" alt="" />
+        <div class="commentItem">
+          <h4>春天也來了</h4>
+          <p>
+            自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+          </p>
+          <p class="commentFrom">-- 美麗萬分</p>
+        </div>
       </div>
     </section>
-    <h3 class="mapTitle" id="mapTitle">我們的位置不太夠坐<br />要不要先定位呢？</h3>
+    <h3 class="mapTitle" id="mapTitle">
+      我們的位置不太夠坐<br />要不要先定位呢？
+    </h3>
     <section class="mapWrap">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.354848140723!2d114.1654809276123!3d22.276205238495567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404005d4921d08f%3A0x96b369f54d5fd158!2z5YWt6KeS!5e0!3m2!1szh-TW!2stw!4v1664196591059!5m2!1szh-TW!2stw"
@@ -176,21 +170,26 @@
       ></iframe>
       <form class="mapInfor">
         <label for="name">姓名</label>
-        <input type="text" id="name" placeholder="貴姓大名" name="name"/>
+        <input type="text" id="name" placeholder="貴姓大名" name="name" />
         <label for="tel">電話</label>
-        <input type="tel" id="tel" placeholder="09-1234-5678" name="tel"/>
+        <input type="tel" id="tel" placeholder="09-1234-5678" name="tel" />
         <label for="email">信箱</label>
-        <input type="email" id="email" placeholder="example@gmail.com" name="email"/>
+        <input
+          type="email"
+          id="email"
+          placeholder="example@gmail.com"
+          name="email"
+        />
         <label for="number">人數</label>
-        <input type="number" id="number" name="number"/>
-        <fieldset>
+        <input type="number" id="number" name="number" />
+        <fieldset class="mapFieldset">
           <label for="">是否需要素食</label>
           <br />
           <!-- 單選要加name -->
           <label for="yes">是</label>
-          <input type="radio" value="yes" id="yes" name="radio"  />
+          <input type="radio" value="yes" id="yes" name="radio" />
           <label for="no">否</label>
-          <input type="radio" value="no" id="no" name="radio" checked/>
+          <input type="radio" value="no" id="no" name="radio" checked />
         </fieldset>
         <div class="mapButton">
           <input class="buttonCancel" type="submit" value="取消" />
@@ -235,5 +234,11 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -134,7 +134,7 @@ table {
   box-sizing: border-box;
 } */
 * {
-  /* outline: 1px solid yellow; */
+  outline: 1px solid yellow;
   text-decoration: none;
   /* 要局部給予設定 不然會沒有icon */
   /* font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif ; */
@@ -418,7 +418,7 @@ table {
   padding: 30px 30px;
   background-color: #efe9e7;
 }
-.commentRwd{
+.commentRwd {
   display: flex;
 }
 .comment img {
@@ -452,7 +452,7 @@ table {
   .commentFrom {
     padding-bottom: 20px;
   }
-  .commentRwd{
+  .commentRwd {
     display: flex;
   }
 }
@@ -486,6 +486,7 @@ table {
   display: flex;
   justify-content: end;
   grid-gap: 10px;
+  align-self: end;
 }
 .buttonCancel {
   color: #fff;
@@ -521,10 +522,9 @@ table {
   }
   .buttonCancel,
   .buttonSend {
-    padding: 0;
     width: 50%;
   }
-  fieldset {
+  .mapFieldset {
     text-align: center;
     font-size: 25px;
   }
@@ -647,7 +647,7 @@ table {
 }
 .carNum {
   position: absolute;
-  font-size: 10px;
+  font-size: 8px;
   padding: 3px 3px;
   border-radius: 50%;
   background-color: red;
@@ -668,7 +668,7 @@ table {
   .shopAside {
     width: 100%;
   }
-  .shopAside a{
+  .shopAside a {
     padding: 10px;
   }
   .containerRight {
@@ -776,7 +776,6 @@ table {
   .shopItem {
     flex-direction: column;
     align-items: center;
-    
   }
   .shopItem div {
     width: 80%;
@@ -879,6 +878,14 @@ table {
 .registerButton {
   align-self: end;
 }
+.registerButtonSend {
+  color: #fff;
+  border: none;
+  background-color: orangered;
+  padding: 5px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
 @media (max-width: 768px) {
   .registerWrapCenter {
     width: 90%;
@@ -898,7 +905,6 @@ table {
   }
   .registerInfor input {
     height: 30px;
-    width: 95%;
     font-size: 25px;
   }
   #registerMail {
@@ -923,8 +929,9 @@ table {
     align-self: center;
     width: 100%;
   }
-  .registerButton input {
+  .registerButtonSend{
     padding-bottom: 40px;
+    width: 100%;
   }
 }
 
@@ -983,13 +990,36 @@ table {
 .loginInfor p {
   color: gray;
 }
-.buttonCancel,
-.buttonSend {
-  padding: 0;
-  width: 49%;
+.loginButton{
+  align-self: end;
+}
+.loginButtonCancel {
+  color: #fff;
+  border: none;
+  background-color: gray;
+  padding: 5px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.loginButtonSend {
+  color: #fff;
+  border: none;
+  background-color: orangered;
+  padding: 5px 20px;
+  font-size: 14px;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
-.loginWrapCenter{
-  width: 90%;
-}
+  .loginWrapCenter {
+    width: 90%;
+  }
+  .loginButton{
+    display: flex;
+    width: 100%;
+    grid-gap: 10px;
+  }
+  .loginButtonCancel,
+  .loginButtonSend {
+    width: 50%;
+  }
 }
