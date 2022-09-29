@@ -12,8 +12,8 @@ $(document).ready(function () {
     $("p").remove(".chefOpen");
   });
 
-    $("#shopFavorite").click(function (e) {
+    $(".shopItem #shopFavorite").click(function (e) {
       e.preventDefault();
-      $("body").toggleClass("clickFavor");
+      $(".shopItem div").toggleClass("clickFavor");
     });
 });
