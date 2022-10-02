@@ -1,0 +1,39 @@
+@import "../utils/function";
+@import "../utils/variables";
+
+.shopAside {
+  width: 20%;
+  font-weight: bold;
+  h3 {
+   font-size: 20px;
+   padding-bottom: 20px;
+ }
+  li {
+   font-size: 16px;
+   /* 會推到a標籤 造成hover有空隙 */
+   /* padding: 5px; */
+   border-bottom: 1px solid $hexrestaurant;
+   color: #000;
+ }
+  li:hover {
+   cursor: pointer;
+   background-color: $hexrestaurant;
+ }
+  a {
+   padding: 5px;
+   display: block;
+   color: $hexrestaurant;
+ }
+  a:hover {
+   color: #fff;
+ }
+}
+
+@include pad(){
+  .shopAside {
+      width: 100%;
+    }
+    .shopAside a {
+      padding: 10px;
+    }
+}

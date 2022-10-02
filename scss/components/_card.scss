@@ -1,0 +1,217 @@
+@import "../utils/function";
+
+.triBoxTitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 0px;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  .triBoxTitle::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 30%;
+    width: 10%;
+    height: 1px;
+    background-color: gray;
+  }
+  .triBoxTitle::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 30%;
+    width: 10%;
+    height: 1px;
+    background-color: gray;
+  }
+}
+.triBox {
+  display: flex;
+  justify-content: space-around;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+.triItem {
+  width: 260px;
+  padding-bottom: 40px;
+  img {
+    border-radius: 50%;
+    display: flex;
+    margin: 0 auto;
+  }
+  h4 {
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 0px;
+  }
+}
+.triItem p {
+  display: flex;
+  margin: 0 auto;
+}
+@include pad() {
+  .triBox {
+    flex-direction: column;
+  }
+  .triItem {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.commentTitle {
+  font-size: 24px;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #efe9e7;
+}
+.comment {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 30px;
+  background-color: #efe9e7;
+  img {
+    height: 67px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+}
+.commentRwd {
+  display: flex;
+}
+.commentItem {
+  display: flex;
+  flex-direction: column;
+  width: 253px;
+  line-height: 1.5;
+  h4 {
+    padding: 25px 0px;
+  }
+}
+.commentFrom {
+  padding-top: 20px;
+  text-align: end;
+  color: gray;
+}
+@include pad() {
+  .comment {
+    flex-direction: column;
+    align-items: center;
+    img {
+      /* width: 30%; */
+      height: 20%;
+    }
+  }
+  .commentFrom {
+    padding-bottom: 20px;
+  }
+  .commentRwd {
+    display: flex;
+  }
+}
+
+.shopItem {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+  position: relative;
+  div {
+    width: 31%;
+    height: auto;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 5px #efe9e7;
+  }
+  img {
+    padding-bottom: 20px;
+    height: 120px;
+    position: relative;
+  }
+  h4,
+  p {
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  p {
+    font-size: 12px;
+    position: relative;
+  }
+  p::after {
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: 35%;
+    background: #000;
+    width: 30%;
+    height: 1px;
+  }
+  button {
+    border: orangered 1px solid;
+    border-radius: 2px;
+    margin: 10px;
+    background-color: #fff;
+    span:hover {
+      color: #fff;
+    }
+  }
+  button,
+  button span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: yellowgreen;
+    color: #fff;
+    border-color: yellowgreen;
+  }
+}
+/* icon只能用id */
+#shopFavorite {
+  position: absolute;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+#shopFavoriteRed {
+  position: absolute;
+  color: red;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+.clickFavor #shopFavoriteRed {
+  display: block;
+}
+#hotSell {
+  position: absolute;
+  width: 20%;
+  left: 50px;
+}
+.shopDollar {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+@include pad() {
+  .shopItem {
+    flex-direction: column;
+    align-items: center;
+    div {
+      width: 80%;
+      height: auto;
+      position: relative;
+    }
+  }
+  #hotSell {
+    position: absolute;
+    left: 25%;
+    width: 50%;
+  }
+}

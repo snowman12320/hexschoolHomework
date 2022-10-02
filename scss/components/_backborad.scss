@@ -1,0 +1,56 @@
+@import "../utils/function";
+
+.banner {
+  background-image: url(../assets/header_desktop.png);
+  height: 420px;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2,
+  p {
+    color: #fff;
+    z-index: 10;
+  }
+  h2 {
+    font-size: 36px;
+    padding-bottom: 30px;
+    // 空格換行沒效果
+    // word-spacing: normal;
+    // overflow-wrap: normal;
+    text-align: center;
+    br{
+        display: none;
+    }
+  }
+  p i {
+    font-size: 16px;
+  }
+}
+.bannerBox {
+  position: absolute;
+  background-color: #000;
+  opacity: 50%;
+  width: 460px;
+  height: 152px;
+}
+@include pad() {
+  .banner {
+    background-image: url(../assets/header_mobile.png);
+    background-repeat: no-repeat;
+    background-color: #000;
+    /* 避免黑邊 */
+    background-size: cover;
+    h2 {
+      font-size: 26px;
+      br{
+        display: block;
+      }
+    }
+  }
+  .bannerBox {
+    width: 320px;
+  }
+}

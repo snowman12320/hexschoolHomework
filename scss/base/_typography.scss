@@ -1,0 +1,12 @@
+// 常用樣式管理 :
+// 預設文字顏色 : $text-color: pink
+// 全域文字大小 : $font-size: 16px
+// 全域行高 : $line-height: 1.5rem
+// 網站container容器寬度 : $container-width: 960px
+// 全域字型 : $font-style :"Microsoft JhengHei", "Helvetica Nueue", Arial, Sans Serif;
+
+.wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}

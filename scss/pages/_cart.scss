@@ -1,0 +1,81 @@
+@import "../utils/function";
+@import "../utils/variables";
+
+.container {
+  display: flex;
+  grid-gap: 20px;
+  padding: 30px 20px;
+}
+.containerTop {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerRight {
+  width: 80%;
+}
+.searchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  .fas {
+   position: relative;
+   color: #fff;
+   background-color: $hexrestaurant;
+   padding: 5.5px;
+   margin-left: -105px;
+   font-size: 13px;
+ }
+  input {
+   width: 60%;
+   border: #000 3px solid;
+ }
+  .material-symbols-outlined {
+   font-size: 27px;
+   color: #000;
+   position: relative;
+ }
+}
+.carNum {
+  position: absolute;
+  font-size: 8px;
+  padding: 3px 3px;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  right: -3px;
+}
+.searchCheck,
+.searchCheck a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+@include pad() {
+  .container {
+    flex-direction: column;
+  }
+  .containerRight {
+    width: 100%;
+  }
+  .searchBar {
+    flex-direction: column;
+    align-items: end;
+  }
+  .searchBar .fas {
+    position: relative;
+    margin-left: 0px;
+    top: -23.5px;
+    padding: 5.5px;
+  }
+  .searchBar input {
+    width: 98%;
+    align-self: start;
+  }
+  .searchCheck {
+    font-size: 25px;
+  }
+}
