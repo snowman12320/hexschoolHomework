@@ -1,5 +1,11 @@
+//引入樣式 (後面引入會跑板)
+@import "vendors/bootstrap";//  (整個載下來引入 要修改再去 本身覆蓋夾修改
+@import "vendors/jquery_ui";//
+//統一引入夾中修改 (因為原始檔跟修改檔不會混在一起)
+// @import "vendors_extensions/bootstrap";//覆蓋樣式
+// @import "vendors_extensions/bootstrap";//
 //地基
-@import "base/reset"; //統一規則
+@import "base/reset"; //重置規則
 @import "base/typography"; //排版規則
 //佈局
 @import "layout/navigation";//導覽
@@ -20,11 +26,6 @@
 @import "utils/variables";//變數
 @import "utils/function";//函數
 @import "utils/mix";//混用
-//引入樣式
-@import "vendors/bootstrap";//  (整個載下來貼上 要修改再去覆蓋夾修改
-@import "vendors/jquery_ui";//
-@import "vendors_extensions/bootstrap";//覆蓋樣式
-@import "vendors_extensions/bootstrap";//
 
 //分頁
 @import "pages/index"; //主頁
