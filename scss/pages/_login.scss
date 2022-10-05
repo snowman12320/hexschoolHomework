@@ -40,6 +40,9 @@
   }
   p {
    color: gray;
+   &:hover{
+    color: blue;
+   }
   }
 }
 #loginMail {
@@ -51,7 +54,7 @@
 #loginPassword1 {
   position: absolute;
   font-size: 20px;
-  top: 100px;
+  top: 95px;
   color: gray;
   margin-right: 10px;
 }

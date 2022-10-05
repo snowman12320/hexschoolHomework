@@ -85,6 +85,9 @@
 }
 .registerInfor p {
   color: gray;
+  &:hover{
+    color: blue;
+  }
 }
 .registerButton {
   align-self: end;
@@ -127,13 +130,13 @@
   #registerPassword1 {
     position: absolute;
     font-size: 25px;
-    top: 118px;
+    top: 110px;
     color: gray;
   }
   #registerPassword2 {
     position: absolute;
     font-size: 25px;
-    top: 165px;
+    top: 153px;
     color: gray;
   }
   .registerButton {

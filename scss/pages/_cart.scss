@@ -12,7 +12,7 @@
 }
 
 .containerRight {
-  width: 80%;
+  width: 100%;
 }
 .searchBar {
   display: flex;
@@ -20,32 +20,36 @@
   align-items: center;
   margin-bottom: 20px;
   font-weight: bold;
-  .fas {
-   position: relative;
+  .fas_relative{
+    position: relative;
+    width: 400px;
+  }
+  .fas_relative input {
+   border: #000 3px solid;
+   width: 100%;
+ }
+  .fas_relative .fas { 
+   position: absolute;
    color: #fff;
    background-color: $hexrestaurant;
-   padding: 5.5px;
-   margin-left: -105px;
+   padding: 6.5px;
+    top: 0;
    font-size: 13px;
- }
-  input {
-   width: 60%;
-   border: #000 3px solid;
  }
   .material-symbols-outlined {
    font-size: 27px;
    color: #000;
    position: relative;
+   .carNum {
+     position: absolute;
+     font-size: 8px;
+     padding: 3px 3px;
+     border-radius: 50%;
+     background-color: red;
+     color: #fff;
+     right: -3px;
+   }
  }
-}
-.carNum {
-  position: absolute;
-  font-size: 8px;
-  padding: 3px 3px;
-  border-radius: 50%;
-  background-color: red;
-  color: #fff;
-  right: -3px;
 }
 .searchCheck,
 .searchCheck a {
@@ -54,6 +58,13 @@
   align-items: center;
   color: #000;
 }
+
+@media (max-width:1000px) {
+  .container{
+max-width: 1000px;
+  }
+}
+
 @include pad() {
   .container {
     flex-direction: column;
@@ -64,15 +75,14 @@
   .searchBar {
     flex-direction: column;
     align-items: end;
+    grid-gap: 10px;
   }
   .searchBar .fas {
     position: relative;
-    margin-left: 0px;
-    top: -23.5px;
-    padding: 5.5px;
+    margin-left: -28px;
   }
   .searchBar input {
-    width: 98%;
+    width: 80%;
     align-self: start;
   }
   .searchCheck {

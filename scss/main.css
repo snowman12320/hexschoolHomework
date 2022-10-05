@@ -8673,6 +8673,9 @@ a {
 .registerInfor p {
   color: gray;
 }
+.registerInfor p:hover {
+  color: blue;
+}
 
 .registerButton {
   align-self: end;
@@ -8717,13 +8720,13 @@ a {
   #registerPassword1 {
     position: absolute;
     font-size: 25px;
-    top: 118px;
+    top: 110px;
     color: gray;
   }
   #registerPassword2 {
     position: absolute;
     font-size: 25px;
-    top: 165px;
+    top: 153px;
     color: gray;
   }
   .registerButton {
@@ -8780,6 +8783,9 @@ a {
 .loginInfor p {
   color: gray;
 }
+.loginInfor p:hover {
+  color: blue;
+}
 
 #loginMail {
   position: absolute;
@@ -8791,7 +8797,7 @@ a {
 #loginPassword1 {
   position: absolute;
   font-size: 20px;
-  top: 100px;
+  top: 95px;
   color: gray;
   margin-right: 10px;
 }
@@ -8844,7 +8850,7 @@ a {
 }
 
 .containerRight {
-  width: 80%;
+  width: 100%;
 }
 
 .searchBar {
@@ -8854,25 +8860,28 @@ a {
   margin-bottom: 20px;
   font-weight: bold;
 }
-.searchBar .fas {
+.searchBar .fas_relative {
   position: relative;
+  width: 400px;
+}
+.searchBar .fas_relative input {
+  border: #000 3px solid;
+  width: 100%;
+}
+.searchBar .fas_relative .fas {
+  position: absolute;
   color: #fff;
   background-color: #3d1101;
-  padding: 5.5px;
-  margin-left: -105px;
+  padding: 6.5px;
+  top: 0;
   font-size: 13px;
-}
-.searchBar input {
-  width: 60%;
-  border: #000 3px solid;
 }
 .searchBar .material-symbols-outlined {
   font-size: 27px;
   color: #000;
   position: relative;
 }
-
-.carNum {
+.searchBar .material-symbols-outlined .carNum {
   position: absolute;
   font-size: 8px;
   padding: 3px 3px;
@@ -8890,6 +8899,11 @@ a {
   color: #000;
 }
 
+@media (max-width: 1000px) {
+  .container {
+    max-width: 1000px;
+  }
+}
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -8900,15 +8914,14 @@ a {
   .searchBar {
     flex-direction: column;
     align-items: end;
+    grid-gap: 10px;
   }
   .searchBar .fas {
     position: relative;
-    margin-left: 0px;
-    top: -23.5px;
-    padding: 5.5px;
+    margin-left: -28px;
   }
   .searchBar input {
-    width: 98%;
+    width: 80%;
     align-self: start;
   }
   .searchCheck {
