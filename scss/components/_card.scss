@@ -159,11 +159,12 @@
     }
   }
   button,
-  button span {
+  button i {
     display: flex;
     justify-content: center;
     align-items: center;
     color: orangered;
+    padding: 5px;
     cursor: pointer;
   }
   button:hover {
@@ -173,22 +174,30 @@
   }
 }
 /* icon只能用id */
-#shopFavorite {
+// #shopFavorite 改名clickFav綁定
+//CSS "style" 不建議使用 id 的方式來設計，因此 #shopFavorite 的樣式可以改成綁定在另外一個 class 中
+.clickFav{
   position: absolute;
   color: #fff;
   padding: 5px;
   cursor: pointer;
 }
-#shopFavoriteRed {
-  position: absolute;
+// 
+.favRed {
   color: red;
-  padding: 5px;
-  cursor: pointer;
-  display: none;
 }
-.clickFavor #shopFavoriteRed {
-  display: block;
-}
+//shopFavoriteRed 的 HTML 以及 CSS 都可以去除～使程式碼更精簡～並且也可以重複點擊愛心，做選取的更動，
+//而不是用 shopFavoriteRed 去做覆蓋，造成點擊後就會無法更動
+// #shopFavoriteRed {
+//   position: absolute;
+//   color: red;
+//   padding: 5px;
+//   cursor: pointer;
+//   display: none;
+// }
+// .clickFavor #shopFavoriteRed {
+//   display: block;
+// }
 #hotSell {
   position: absolute;
   width: 20%;

@@ -15,6 +15,8 @@ $(document).ready(function () {
 
   $(".shopItem #shopFavorite").click(function (e) {
     e.preventDefault();
-    $(".shopItem div").toggleClass("clickFavor");
+    var choose = e.target.dataset.num ; 
+    // $(".shopItem div").toggleClass("clickFavor");
+    $(".shopItem [data-num=" + choose + "]").toggleClass("favRed");
   });
 });
