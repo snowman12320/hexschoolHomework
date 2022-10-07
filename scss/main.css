@@ -8080,6 +8080,7 @@ a {
   width: 30%;
   display: flex;
   flex-direction: column;
+  line-height: 2rem;
 }
 .footerItem h3, .footerItem .h3 {
   font-size: 24px;
@@ -8131,7 +8132,6 @@ a {
 .banner {
   background-image: url(../assets/header_desktop.png);
   height: 420px;
-  max-width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8270,7 +8270,6 @@ a {
 .commentItem {
   display: flex;
   flex-direction: column;
-  width: 253px;
   line-height: 1.5;
 }
 .commentItem h4, .commentItem .h4 {
@@ -8425,6 +8424,7 @@ a {
   width: 50%;
   font-size: 14px;
   grid-gap: 10px;
+  padding: 50px;
 }
 .mapInfor label {
   padding-top: 10px;

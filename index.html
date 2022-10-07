@@ -46,9 +46,13 @@
       crossorigin="anonymous"
     ></script>
   </head>
+  <!-- 不建議將 .wrap 設在 body 標籤上，因為 body 是全域的設定 -->
   <body class="wrap">
     <nav class="navbar">
-      <a class="headerLogo" href="index.html">六角西餐廳</a>
+      <!-- 一個網頁至少會有一個 h1 標籤，也只會有一個，因此建議在 .headerLogo 外層再包一個 h1 標籤，增進 SEO -->
+      <h1>
+        <a class="headerLogo" href="index.html">六角西餐廳</a>
+      </h1>
       <ul class="menu">
         <li><a href="#triBoxTitle">特色</a></li>
         <li><a href="#chef">主廚</a></li>
@@ -59,7 +63,8 @@
         </li>
       </ul>
       <!-- 漢堡選單 -->
-      <span id="menuOpen" class="material-symbols-outlined"> menu_open </span>
+      <!-- CSS 請避免使用 id 來指定樣式，因為 id 具有唯一性，指定樣式建議用 class，#menuOpen 記得更改～ -->
+      <span type="button" id="menuOpen" class="material-symbols-outlined"> menu_open </span>
     </nav>
     <ul class="menuAside">
       <li><a href="#triBoxTitle">特色</a></li>
@@ -134,12 +139,16 @@
           molestie bibendum.
         </p>
       </div>
-      <p class="chefOpen">查看全文</p>
+      <!-- 查看全文」可以使用 a 標籤或是 button 標籤較為適合 -->
+      <!-- 盡然可以收闔了 -->
+      <a  type="button" class="chefOpen">查看全文</a>
     </div>
     <h3 class="commentTitle">聽聽別人的感想</h3>
     <section class="comment">
       <div class="commentRwd">
-        <img src="./assets/avatar_1.png" alt="" />
+        <!-- 補上 alt 屬性 Ex. ( <img src="..." alt="..."> 當圖片無法被渲染時，若圖片屬性當中有設定 alt 的值，就會顯示 alt 文字敘述作為補救的措施。
+ -->
+        <img src="./assets/avatar_1.png" alt="水電工 阿祥的帥照" />
         <div class="commentItem">
           <h4>高雄一口吃</h4>
           <p>
