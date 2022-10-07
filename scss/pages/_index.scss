@@ -9,6 +9,14 @@
   padding: 0px 42px;
   img {
     width: 50%;
+    //沒有在小視窗 放大內容的覆蓋效果
+    // max-width: 100%;
+    // height: auto;
+    object-position: center center;
+    object-fit: cover;
+    //背圖才能用
+    // background-position: center center;
+    // background-attachment: cover;
   }
 }
 .chefContent {
